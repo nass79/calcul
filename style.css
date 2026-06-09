@@ -1,0 +1,41 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.7);
+}
+.info{
+  display: flex;
+  flex-direction: row
+}
+.info h3{
+  margin: 40px;
+}
+input{
+  width: 80px;
+  height: 60px;
+}
+
+.operation{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.nb{
+  border: 1px black solid ;
+  padding: 4px;
+}
+main{
+  filter: none;
+  background: white;
+  padding: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+#test{
+  filter: blur(12px);
+}
