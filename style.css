@@ -17,16 +17,38 @@ body{
 }
 input{
   width: 80px;
-  height: 60px;
+  height: 50px;
+  border : black solid 1px ;
+  outline: none;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
 }
 
 .operation{
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 20px;
 }
+
+.inf {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 10px 16px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  letter-spacing: 1px;
+  transition : 2s;
+  
+}
+
+#scoreValue {
+  color: #00ff88;
+}
+
+
 .nb{
-  border: 1px black solid ;
+  border: 3px black solid ;
   padding: 4px;
 }
 main{
@@ -35,7 +57,16 @@ main{
   padding: 50px;
   border: 1px solid black;
   border-radius: 5px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
 }
 #test{
   filter: blur(12px);
+}
+
+#score{
+  transition: transform 0.2s, opacity 0.2;
+}
+#score .change{
+  transform: translateY(-10px);
+  opacity: 0;
 }
