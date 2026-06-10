@@ -63,10 +63,6 @@ main{
   filter: blur(12px);
 }
 
-#score{
-  transition: transform 0.2s, opacity 0.2;
-}
-#score .change{
-  transform: translateY(-10px);
-  opacity: 0;
+#wrong{
+  text-align: center;
 }

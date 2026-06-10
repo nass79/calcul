@@ -17,6 +17,8 @@ let reponse = document.querySelector("input")
 let scr = document.getElementById("score")
 let ess = document.getElementById("try")
 let tr = 0
+
+let wrong = document.getElementById("wrong")
 document.addEventListener("keydown", (event) => {
   if(event.key === "Enter"){
     rep = Number(reponse.value)
@@ -30,7 +32,10 @@ document.addEventListener("keydown", (event) => {
       scr.textContent = score
     }
     else{
-      console.log("22")
+      wrong.textContent = "Mauvaise réponse"
+      setTimeout(() => { 
+        wrong.textContent = ""
+      },2000)
     }
     tr += 1
     ess.textContent = tr
