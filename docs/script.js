@@ -19,7 +19,7 @@ let ess = document.getElementById("try")
 let tr = 0
 
 let wrong = document.getElementById("wrong")
-document.addEventListener("keydown", (event) => {
+reponse.addEventListener("keydown", (event) => {
   if(event.key === "Enter"){
     rep = Number(reponse.value)
     if(number1 + number2 === rep){
